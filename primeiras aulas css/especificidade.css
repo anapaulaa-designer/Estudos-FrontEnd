@@ -1,0 +1,59 @@
+/* 
+
+ORDEM DE ESPECIFICIDADE:
+
+ID   >   Classes, atributos e pseudo-classes    >   Elementos e pseudo-elementos
+
+1        0                                          0
+0        1                                          0
+1        1                                          0
+1        1                                          1
+2        1                                          2
+2        2                                          2
+2        2                                          3
+
+quanto mais elementos dentro maior vai subindo o numero ex: (0,5,0)
+*/
+
+#p {
+    background: red;
+}
+
+#p.p {
+    background: yellow;
+}
+
+p#p.p {
+    background: white;
+}
+
+body#b p#p.p {
+    background-color: green;
+}
+
+body#b.bclass p#p.p {
+    background-color: aqua;
+}
+
+body#b.bclass p#p.p::selection {
+    background-color: purple;
+}
+
+/* ideal usar classes pois é fácil sobrescrever (0,1,0) */
+
+/* tag style dentro do elemento html é superior a todos acima*/
+
+/* !important força o navegador a aplicar o estilo independente da especificidade, so usar como ultimo recurso, não é recomendado mas funciona */
+
+p {
+    background: greenyellow !important; 
+}
+
+
+/* ORDEM DE PRIORIDADE:
+ 1º !important
+ 2º style no html
+ 3º empate - a que vem primeiro
+ 4º especificidade maior
+ 5º especificidade menor
+*/

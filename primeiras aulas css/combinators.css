@@ -1,0 +1,33 @@
+/* descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) */
+
+.classepai h1+p {
+    color: aqua;
+}
+
+/* seleciona o primeiro 'p' irmão de 'h1' dentro da classe */
+
+.classepai h1~p {
+    color: aqua;
+}
+
+/* seleciona todos os 'p' depois do 'h1' dentro da classe */
+
+[meu-atributo= "valor"] {
+    color: aqua;
+}
+
+/* seleciona o valor do atributo entre " " , ele é mt específico */ 
+
+[checked= "valor"] {
+    color: aqua;
+}
+
+
+.classepai > p {
+    background: red;
+} 
+
+/* não da pra entender */

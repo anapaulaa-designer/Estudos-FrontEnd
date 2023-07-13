@@ -1,0 +1,9 @@
+.caixa {
+    width: 1236px;
+    height: 510px;
+    flex-shrink: 0;
+    color: yellow;
+    background: black;  
+}
+
+

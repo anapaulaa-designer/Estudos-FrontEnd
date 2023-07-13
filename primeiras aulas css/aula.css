@@ -1,0 +1,13 @@
+.texto {
+    background: red;
+    width: 200px;
+    height: 200px;
+
+    overflow: hidden; /* todo conteudo que passar será escondido no tamanho definido do bloco, mas ele continuará la */
+    overflow-y: scroll; /* barra de rolagem no eixo X ou Y */
+    overflow-y: auto; /* só aparece a barra de rolagem quando o conteudo sobressair o tamanho do bloco */
+}
+
+::-webkit-scrollbar {
+    background: green;
+}

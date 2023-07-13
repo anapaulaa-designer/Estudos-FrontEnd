@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    body {
+      background-color: #f9e0e5; 
+    }
+    
+    header {
+      background: linear-gradient(to right, rgba(85, 169, 255, 0.8), rgba(255, 110, 196, 0.8));
+      padding: 0.5% 2%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      
+    }
+    
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .menu {
+      display: flex;
+      list-style: none;
+    }
+    
+    .menu li {
+      margin-right: 10px;
+    }
+    
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      border: 1px solid white; /* Bordas nos menus do topo */
+      border-radius: 3px;
+    }
+    
+    .parallax {
+      height: 400px;
+      background-image: url("https://images3.alphacoders.com/109/1090797.jpg");
+      background-attachment: fixed;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      text-align: left;
+      padding-left: 20px;
+    }
+    
+    .blog-title {
+      font-size: 50px;
+      font-weight: 500;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1%;
+      border-radius: 10px;
+    }
+    
+    main {
+      padding: 2%;
+      display: block;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+      grid-gap: 5%;
+      
+    }
+    
+    .blog-post {
+      display: block;
+      background-color: white;
+      border-radius: 5px;
+      width: fit-content;  
+    }
+    
+    .blog-post img {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      border-radius: 5px 5px 0 0;
+    }
+    
+    .blog-post p, h3 {
+      padding: 1% 2%;
+      width: 100%;
+    }
+
+    footer {
+      display: block;
+      height: 500px;
+    }
+    
+    footer img {
+      display: block;
+      width: 100%;
+      max-height: 100%;      
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://preview.redd.it/wt3ishnq3lp21.png?width=1000&format=png&auto=webp&s=2141bb1f0e976e19c5186403b114461c605c6136" alt="Logo">
+    <ul class="menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Notícias</a></li>
+      <li><a href="#">Guias</a></li>
+      <li><a href="#">Campeonatos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </header>
+  
+  <div class="parallax">
+    <div class="blog-title">Como Jogar de Ahri Mid</div>
+  </div>
+  
+  <main>
+    <div class="blog-container">
+      <div class="blog-post">
+        <img src="https://a-static.besthdwallpaper.com/spirit-blossom-ahri-vastaya-league-of-legends-lol-wallpaper-3840x2160-103584_54.jpg" alt="Imagem 1">
+        <h3>Como Jogar nas Fases do Jogo</h3>
+        <p>Ahri possui diferentes poderes em cada fase do jogo, e saber aproveitá-los é essencial para garantir vitórias. Neste artigo, discutiremos como jogar de Ahri nas fases de rotas, transição para o meio do jogo e lutas de equipe, para que você possa maximizar seu impacto em todas as etapas da partida.</p>
+      </div>
+      <div class="blog-post">
+        <img src="https://a-static.besthdwallpaper.com/spirit-blossom-ahri-vastaya-league-of-legends-lol-wallpaper-3840x2160-103584_54.jpg" alt="Imagem 2">
+        <h3>Replays e VODs</h3>
+        <p>Assistir a replays e VODs de jogadores profissionais é uma ótima maneira de aprender com os melhores. Neste guia, indicaremos alguns replays e VODs de jogadores experientes de Ahri, para que você possa observar e absorver suas estratégias, mecânicas e decisões de jogo.</p>
+      </div>
+      <div class="blog-post">
+        <img src="https://a-static.besthdwallpaper.com/spirit-blossom-ahri-vastaya-league-of-legends-lol-wallpaper-3840x2160-103584_54.jpg" alt="Imagem 3">
+        <h3>Dicas de Combos</h3>
+        <p>Ahri é conhecida por seus combos devastadores. Neste artigo, apresentaremos alguns dos melhores combos de Ahri e explicaremos como executá-los corretamente. Aprenda a surpreender seus oponentes, causar muito dano e conquistar vitórias impressionantes!</p>
+      </div>
+      <div class="blog-post">
+        <img src="https://a-static.besthdwallpaper.com/spirit-blossom-ahri-vastaya-league-of-legends-lol-wallpaper-3840x2160-103584_54.jpg" alt="Imagem 4">
+        <h3>Itemização</h3>
+        <p>A escolha dos itens certos pode fazer toda a diferença no desempenho de Ahri. Neste guia, discutiremos as opções de itens recomendadas para Ahri, bem como estratégias de compra e itemização para diferentes situações de jogo.</p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <img src="https://i.redd.it/putnid4ntbc51.png" alt="Rodapé">
+  </footer>
+</body>
+</html>

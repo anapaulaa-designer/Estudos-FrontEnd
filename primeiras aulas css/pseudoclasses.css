@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading:hover {
+    background: red;
+}
+
+.heading {
+    transition: all 0.5s ease-in-out;
+}
+
+a:link {
+    color:brown;
+}
+
+a:visited {
+    color:green;
+}
+
+a:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+a:active {
+    background: purple;
+    color: aqua;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid  black;
+}
+
+input:disabled {
+    background-color: darkslategrey;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    background: green;
+}
+
+input:checked + p /* se tiver 'checked' o primeiro elemento 'p' depois do input será selecionado */ {
+        background: yellow;
+}
+
+
+.pai .lista li:last-child /* :first-child */{
+    background: red;
+}
+
+input:required {
+    background: brown;
+}
+
+
+
+/* PSEUDOCLASSE :NOT */
+
+input:not(:checked) + p /* se não tiver 'checked' o primeiro elemento 'p' depois do input será selecionado */ {
+    background: blue;
+}
+
+
+
+/* PSEUDOCLASSE :NTH-CHILD */
+/* eles precisam ser irmãos para fazer efeito*/
+
+ul li:nth-child(odd) /* numeros impar selecionados */ {
+    background: goldenrod;
+}
+
+
+ul li:nth-child(even) /* numeros pares selecionados */ {
+    background: green;
+}
+
+
+ul li:nth-child(3n) /* numeros de 3 em 3 selecionados */ {
+    background: aqua;
+}
+
+
+ul li:nth-child(3n+5) /* começando do 5 elemento começa a contar de 3 em 3 */ { 
+    background: red;
+}
+
+

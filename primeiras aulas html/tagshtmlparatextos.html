@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HMLT para Textos</title>
+    
+    <style>
+        .titulo-um {background: rgb(126, 126, 199)}
+        .logo-google {width: 50px; height: 44px}
+        .vermelho {background: red;}
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo-um">
+        Tags HMLT para Textos
+    </h1>
+    
+    <p style="background: rgb(202, 202, 202);">
+        Teste de link e imagem
+        <a href="https://google.com.br" target="_blank">    
+            <b><i>Google</i></b> 
+        </a> 
+        aqui
+    </p>
+
+    <a rel="nofollow" href="https://google.com.br" target="_blank">
+        <img class="logo-google" src="https://t.ctcdn.com.br/essK16aBUDd_65hp5umT3aMn_i8=/400x400/smart/filters:format(webp)/i606944.png" alt="Logo Google">
+    </a>
+
+    <p>
+        Texto em <b>negrito</b> e <strong>forte</strong>, texto em <i>italico</i> e <em>ênfase</em>, texto em <del>remover</del> e <ins>inserir</ins> também <s>riscado</s> e  <u>underline</u>. Texto em <small>pequeno</small>, e também elevado (4<sup>2</sup>) e rebaixado (H<sub>2</sub>O). Quebra de linha aqui!<br>
+        
+        Fazer <q>uma citação</q> e <q cite="https://google.com.br">outra citação</q><br>
+        
+        As outras não podem estar dentro do " parágrafo "        
+    </p>
+
+    <hr>
+
+    <blockquote>
+        Aqui sim eu estou fazendo um bloco de citação
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem fugit dignissimos. 
+        </p>
+    </blockquote>
+
+    <hr>
+
+    <pre>
+        Citação de códigos:
+        <code>let soma = 0;
+
+                inputMais.forEach((input)) => {
+                    const valor = input.value;
+                    const numero = Number(valor);
+
+                    if (numero) {
+                        soma += numero;
+                    }
+
+                    console.log(soma);
+                }); 
+        </code>
+    </pre>
+
+    <p><span class="vermelho"> Tag inline (pode ser usado dentro do parágrafo) não quebra a linha.</span>
+
+    </p>
+    <div class="vermelho">Tag block (não pode ser usado dentro do parágrafo) quebra a linha.</div>
+
+</body>
+
+</html> 

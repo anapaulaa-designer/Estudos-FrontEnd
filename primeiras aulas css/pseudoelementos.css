@@ -1,0 +1,54 @@
+* {
+    font-family: sans-serif;
+    
+}
+
+body {
+    background: rgb(47, 50, 76, 100);
+}
+
+li::after /* ::before */ {
+    content: "momo";
+    background: rgb(185, 185, 212);
+    color: aliceblue;
+    display: block;
+}
+
+
+p::first-letter {
+    font-size: 60px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+} 
+
+
+p::first-line {
+    background: aqua;
+}
+
+
+p::selection {
+    background: black;
+    color: aliceblue;
+}
+
+.classe::placeholder {
+    color: red;
+}
+
+::placeholder {
+    color: green;
+}
+
+
+
+.teste {
+    background: rgb(47, 50, 76, 100);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16);
+    height: 150px;
+    width: 400px;
+    display: block;
+    text-align: center;
+}
+
