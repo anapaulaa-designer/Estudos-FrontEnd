@@ -1,0 +1,59 @@
+
+/* UNIDADE DE MEDIDA ABSOLUTA */
+/* não é flexível no navegador */
+/* p {
+    font-size: 20px;
+} */
+
+
+/* UNIDADE DE MEDIDA RELATIVA */
+
+/* EM - se baseia no elemento mais próximo dele */
+
+/* .pai { font-size: 50px;}
+p { font-size: 2em;}
+
+50px x 2em = 100px de fonte */
+
+
+
+
+/* REM - se baseia no elemento root do arquivo (html) */
+
+/* html { font-size: 20px;}
+p { font-size: 2rem}
+
+20px x 2rem = 40px */
+
+html { font-size: 62.5%;}
+p {font-size: 1.6rem} 
+
+/* com esse calculo agora 1rem passa a se comportar como 10px.
+então: */
+
+.pai { 
+    width: 30rem; /* 30rem = 300px */
+}
+
+
+/* VW - se baseia no width do viewport (tela visível) */
+/* VH - se baseia no hight do viewport */
+ 
+/* 1 vw = 1% da largura do meu viewport
+100vw = 100% da largura do viewport */
+
+
+/* % - baseada no elemento pai */
+
+.pai > p { /* primeiro filho */
+    width: 50%; 
+}
+
+/* ele vai ser 50% do .pai que no caso é 150px */
+
+
+/* VMIN baseada na menor parte do viewport
+VMAX baseada na maior parte do viewport
+
+ex: 2vmin 1000 de viewport
+2 % de 1000 = 20px  */

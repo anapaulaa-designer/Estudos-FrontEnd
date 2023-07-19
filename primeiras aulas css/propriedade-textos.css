@@ -1,0 +1,15 @@
+p {
+    font-size: 20px;
+    /* font-style: italic;
+    font-weight: bold;
+    direction: ltr;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 30px; */
+    text-align: left /* center right */;
+    /* text-decoration: underline overline; */
+    text-indent: 50px;
+    text-shadow: 2px 2px 2px rgb(163, 163, 163); /* igual o xd */
+    text-transform: uppercase /* capitalize */;
+    /* https://www.w3schools.com/css/css_text.asp */
+}
