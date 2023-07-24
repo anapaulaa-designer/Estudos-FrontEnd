@@ -1,0 +1,35 @@
+* { margin: 0;}
+
+.pai {}
+
+.filha1, .filha2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: static;
+}
+
+.filha2 {
+    position: absolute;
+    background: greenyellow;
+    z-index: 1;
+}
+
+.filha1 {
+    position: absolute; 
+    top: 50px;
+    left: 10px;
+    z-index: 2;
+
+}
+
+/* RELATIVE: deixa escolher o local relativo a outros elementos e habilita o top,left, right e bottom */
+
+/* ABSOLUTE: posição absoluta em relação ao elemento pai ou html, ele fica "por cima" dos outros elementos, também habilita top, left..
+ */
+
+ /* Z-INDEX: cria camadas, coloca um elemento em cima do outro e pode trocar o elemento de camadas. HACK: z-index: -1 coloca o elemento pra tras de tudo  */
+
+ /* FIXED: elemento fixado mesmo rolando a página */
+
+ /* STICKY: elemento fica fixado até encontrar outro sticky. Ex: em uma lista com A...B...C... o A vai ficar colado no topo até chegar no B que vai colar depois obs.: tem que colocar top: 0*/
