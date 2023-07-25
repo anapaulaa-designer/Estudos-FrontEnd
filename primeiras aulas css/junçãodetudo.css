@@ -21,14 +21,13 @@
 }
 
 
-/* MEDIA QUERIES: pontos que voce define para que os elementos se comportem diferente ao chegar a X de tamanho */
+.menu {
+    width: 100%;
+    position: fixed;
+    background: black;
+}
 
-/* BREAK POINTS: pontos de css que, quando colocado no media queries, sobrescrevem os já colocados anteriormente e aplicam aquele tamanho */
 
-/* links da aula: 
-https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries
-https://www.w3schools.com/cssref/css3_pr_mediaquery.php
-https://devfacts.com/media-queries-breakpoints-2023/ */
 
 
 @media all and (max-width: 568px) {
