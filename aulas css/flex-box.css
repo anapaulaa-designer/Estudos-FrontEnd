@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; /* 
+    - flex: se comporta como se fosse block, mas da abertura para varias edições como as abaixo
+    - inline-flex: elemento inline, não muda o flow dos outros elementos depois dele*/
+    flex-direction: row; /* 
+    indica a direção do eixo principal do meu flex "main axis":
+    - colum: o eixo é o vertical
+    - row: o eixo é na horizontal
+    - reverse: inverte a ordem dos elementos html*/
+    justify-content: space-between; 
+    /* justifica entre o meio do conteudo da box:
+    - space-around: distribui em espaços iguais
+    - flex-start: alinha ao inicio
+    - flex-end: alinha ao final
+    - center: alinha ao centro
+    - space-between: espaço entre os elementos igual
+    - space-evenly: espaço igual dos elementos */
+    align-items: flex-start;
+    /* justifica o conteudo no meio (no horizontal ou vertical depende do flex direction)
+    - flex-start: alinha ao inicio
+    - flex-end: alinha ao final
+    - center: alinha ao centro
+    - baseline: alinha todos à base da fonte
+    - strech: estica ate a 'altura ou largura' do conteudo principal*/
+    /* flex-wrap: wrap; quebra a linha dos elementos */
+    flex-flow: row wrap; /* mesmo efeito de quebra de linha mas aqui voce escolhe o sentido da quebra
+    é um atalho para flex direction e wrap*/
+    align-content: center;
+    /* alinha o conteudo todo no centro */
+    background: yellow;
+    /* gap: 30px; um espaçamento entre os elementos, não funciona em todos os navegadores mobile */
+}
+
+.flex-item {
+    flex-grow: 1;
+    /* permite dividir o espaço que sobrar entre os elementos e aplica no tamanho deles final e por igual, 0 não permite*/
+    flex-shrink: 1;
+    /* permite diminuir o tamanho do elemento */
+    flex-basis: 320px;
+    /* tamanho base dos elementos */
+    /* código para simplificar os acima: */
+    flex: 1 1 320px; /* mais recomendado */
+    width: 100%; /* vai distribuir igualmente */
+    height: 200px;
+    background: red;
+    ;
+}
+
+/* link da aula 1: https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#um_aparte_no_modelo_flex */
+
+/* link aula 2: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+.flex-item:nth-child(2) {
+    flex: 2 1 320px;
+    /* divide 2x mais para o elemento selecionado */
+    background: blue;
+    align-self: flex-end;
+}
