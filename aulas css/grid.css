@@ -13,12 +13,15 @@ body {
     display: grid;
     max-width: 1200px;
     margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
     /* tamanho das colunas, pode ser qualquer medida */
     /* para dispositivos moveis colocar auto-fill e minmax: 
     grid-template-clumns: repeat(auto-fill, minmax(320px, 1fr)) */
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 30px 10px;
+    /* row-gap: 30px;
+    column-gap: 30px; */
 }
 
 .grid div {
@@ -28,17 +31,22 @@ body {
 
 .grid div:nth-child(5) {
     background: darkred;
-    /* grid-column-start: 1;
+    /* grid-area: 1 / 1 / 4 / 4;
+    grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
-    grid-row-end: 6; */
+    grid-row-end: 6;
     grid-row: span 2;
-    grid-column: span 2;
+    grid-column: span 2; */
 }
+
+
+
+
 
 @media (max-width: 768px) {
     .grid div:nth-child(5) {
         grid-column: span 1;
-        /* para dispositivos moveis o span 2 nao funciona */
+         /* para dispositivos moveis o span 2 nao funciona  */
     }
 }
